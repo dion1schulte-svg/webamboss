@@ -1,0 +1,67 @@
+/* ============================================================
+   WEBAMBOSS — Selbst gehostete Schriften (DSGVO-konform)
+   Kein Google Fonts CDN.
+
+   SETUP: Lade die folgenden woff2-Dateien herunter und lege
+   sie in die angegebenen Ordner:
+
+   Unbounded Bold (700):
+     → https://fonts.gstatic.com/s/unbounded/
+     → Datei: assets/fonts/Unbounded/Unbounded-Bold.woff2
+
+   Inter Regular (400), Medium (500), SemiBold (600):
+     → https://fonts.gstatic.com/s/inter/
+     → Dateien: assets/fonts/Inter/Inter-Regular.woff2
+                assets/fonts/Inter/Inter-Medium.woff2
+                assets/fonts/Inter/Inter-SemiBold.woff2
+
+   Archivo Bold (700):
+     → https://fonts.gstatic.com/s/archivo/
+     → Datei: assets/fonts/Archivo/Archivo-Bold.woff2
+
+   Alternativ: `npx google-webfonts-helper` oder
+               fontsource npm packages verwenden.
+   ============================================================ */
+
+/* --- Unbounded — nur Headlines --- */
+@font-face {
+  font-family: 'Unbounded';
+  src: url('../assets/fonts/Unbounded/Unbounded-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* --- Inter — Fließtext, UI, Buttons --- */
+@font-face {
+  font-family: 'Inter';
+  src: url('../assets/fonts/Inter/Inter-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../assets/fonts/Inter/Inter-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../assets/fonts/Inter/Inter-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* --- Archivo — Logo-Wortmarke --- */
+@font-face {
+  font-family: 'Archivo';
+  src: url('../assets/fonts/Archivo/Archivo-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
