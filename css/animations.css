@@ -60,3 +60,14 @@
 .accent-pulse {
   animation: ringPulse 2.8s ease infinite;
 }
+
+/* ---- Seitenübergang beim Öffnen einer Referenzseite ---- */
+@keyframes pageExit {
+  from { opacity: 1; transform: scale(1); }
+  to   { opacity: 0; transform: scale(1.025); }
+}
+
+body.is-page-exiting {
+  animation: pageExit 0.36s cubic-bezier(0.4, 0, 1, 1) forwards;
+  pointer-events: none;
+}

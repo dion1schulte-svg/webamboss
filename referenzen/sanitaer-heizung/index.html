@@ -1,0 +1,665 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sanitär & Heizung Hahn – Ihr SHK-Meisterbetrieb in Gevelsberg für den Ennepe-Ruhr-Kreis. Bad-Sanierung, Heizungstausch, Wärmepumpe, 24h-Notdienst.">
+    <title>Sanitär & Heizung Hahn – Bad und Heizung aus Meisterhand | Gevelsberg</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<!-- Demo-Banner -->
+<div class="demo-banner">
+    <p>Beispielseite von <strong>Webamboss</strong> — fiktiver Musterbetrieb. <a href="#">webamboss.de</a></p>
+</div>
+
+<!-- Header -->
+<header class="site-header" id="site-header">
+    <div class="container">
+        <nav class="nav" aria-label="Hauptnavigation">
+            <a class="nav__logo" href="#" aria-label="Sanitär & Heizung Hahn – Startseite">
+                <span class="nav__logo-sh">SH</span>&nbsp;Hahn
+            </a>
+            <ul class="nav__links" id="nav-links" role="list">
+                <li><a href="#leistungen">Leistungen</a></li>
+                <li><a href="#heizung">Heizung</a></li>
+                <li><a href="#bad">Bad</a></li>
+                <li><a href="#ablauf">Ablauf</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+            <div class="nav__actions">
+                <a class="nav__tel" href="tel:+4923326543 21">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.8 19.8 0 01.02 1.18C.02.6.48.02 1.08.02h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L5.18 7.59a16 16 0 006.18 6.18l1.95-1.07a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/></svg>
+                    02332 / 65 43 21
+                </a>
+                <a href="#kontakt" class="btn btn--primary btn--sm">Termin anfragen</a>
+            </div>
+            <button class="nav__burger" id="nav-burger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="nav-links">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+    </div>
+</header>
+
+<!-- Hero -->
+<section class="hero" id="hero">
+    <div class="container hero__inner">
+        <div class="hero__content reveal">
+            <h1 class="hero__headline">Bad und Heizung aus <span class="text-primary">Meisterhand</span>.</h1>
+            <p class="hero__sub">Sanitär, Heizung und moderne Wärmelösungen für Gevelsberg und den Ennepe-Ruhr-Kreis — sauber geplant, termintreu umgesetzt, fair zum Festpreis.</p>
+            <div class="hero__ctas">
+                <a href="#kontakt" class="btn btn--primary btn--lg">Termin anfragen</a>
+                <a href="tel:+4923326543 00" class="btn btn--outline btn--lg">
+                    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.8 19.8 0 01.02 1.18C.02.6.48.02 1.08.02h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L5.18 7.59a16 16 0 006.18 6.18l1.95-1.07a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/></svg>
+                    Notdienst: 02332 / 65 43 00
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Animierte Rohrlinie -->
+    <div class="hero__pipe-wrap" aria-hidden="true">
+        <svg class="hero__pipe" viewBox="0 0 1200 180" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+            <defs>
+                <linearGradient id="flowGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+                    <stop offset="0%" stop-color="#11A8A2"/>
+                    <stop offset="55%" stop-color="#11A8A2"/>
+                    <stop offset="100%" stop-color="#EE9B3A"/>
+                </linearGradient>
+            </defs>
+            <path id="pipe-base-path" class="pipe-base"
+                d="M0,135 H130 Q160,135 160,105 V75 Q160,45 190,45 H420 Q450,45 450,75 V105 Q450,135 480,135 H720 Q750,135 750,105 V65 Q750,35 780,35 H980 Q1010,35 1010,65 V105 Q1010,135 1040,135 H1200"
+                fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <path id="pipe-flow-path" class="pipe-flow"
+                d="M0,135 H130 Q160,135 160,105 V75 Q160,45 190,45 H420 Q450,45 450,75 V105 Q450,135 480,135 H720 Q750,135 750,105 V65 Q750,35 780,35 H980 Q1010,35 1010,65 V105 Q1010,135 1040,135 H1200"
+                fill="none" stroke="url(#flowGrad)" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="160" cy="105" r="7" class="pipe-joint"/>
+            <circle cx="450" cy="75"  r="7" class="pipe-joint"/>
+            <circle cx="750" cy="105" r="7" class="pipe-joint"/>
+            <circle cx="1010" cy="65" r="7" class="pipe-joint"/>
+        </svg>
+    </div>
+
+    <!-- Trust-Bar -->
+    <div class="trust-bar">
+        <div class="container">
+            <div class="trust-bar__inner reveal">
+                <div class="trust-bar__item">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="currentColor"/></svg>
+                    Meisterbetrieb
+                </div>
+                <div class="trust-bar__item">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+                    24h-Notdienst
+                </div>
+                <div class="trust-bar__item">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    Ennepe-Ruhr-Kreis
+                </div>
+                <div class="trust-bar__item">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                    seit 1998
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Leistungen -->
+<section class="leistungen section" id="leistungen">
+    <div class="container">
+        <div class="section__header reveal">
+            <h2>Unsere <span class="text-primary">Leistungen</span></h2>
+            <p>Von der Bad-Modernisierung bis zum Heizungstausch — alles aus einer Hand.</p>
+        </div>
+        <div class="cards-grid">
+            <article class="card reveal" style="--i:0">
+                <div class="card__icon" aria-hidden="true">
+                    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="8" y="22" width="32" height="20" rx="3" stroke="currentColor" stroke-width="2.5"/>
+                        <path d="M16 22V16a8 8 0 0116 0v6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                        <path d="M24 32v4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                        <path d="M20 36h8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <h3>Bad-Modernisierung</h3>
+                <p>Vom ersten Entwurf bis zur fertigen Wohlfühl-Dusche: barrierearm, dicht, schön.</p>
+            </article>
+            <article class="card reveal" style="--i:1">
+                <div class="card__icon" aria-hidden="true">
+                    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24 6c0 0-12 11-12 20a12 12 0 0024 0C36 17 24 6 24 6z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+                        <path d="M24 20c0 0-4 4-4 7a4 4 0 008 0c0-3-4-7-4-7z" fill="currentColor" opacity="0.25"/>
+                        <path d="M16 42h16" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <h3>Heizung & Wärmepumpe</h3>
+                <p>Heizungstausch, Wärmepumpe und Hybrid-Lösungen — wir beraten zur passenden Förderung.</p>
+            </article>
+            <article class="card reveal" style="--i:2">
+                <div class="card__icon" aria-hidden="true">
+                    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M36 8l6 6-14 14H16v-12L30 2z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+                        <path d="M16 28L8 36Q4 40 4 43" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                        <path d="M28 16l6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <h3>Sanitärinstallation</h3>
+                <p>Leitungen, Armaturen, WC und Waschtisch — fachgerecht und langlebig installiert.</p>
+            </article>
+            <article class="card card--accent reveal" style="--i:3">
+                <div class="card__icon" aria-hidden="true">
+                    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="24" cy="24" r="18" stroke="currentColor" stroke-width="2.5"/>
+                        <path d="M24 14v10l7 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6 24H2M46 24h-4M24 2V6M24 42v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <h3>Notdienst</h3>
+                <p>Rohrbruch oder Heizungsausfall? Wir sind rund um die Uhr für den EN-Kreis erreichbar.</p>
+            </article>
+            <article class="card reveal" style="--i:4">
+                <div class="card__icon" aria-hidden="true">
+                    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="24" cy="24" r="8" stroke="currentColor" stroke-width="2.5"/>
+                        <path d="M24 6V2M24 46v-4M6 24H2M46 24h-4M10.1 10.1L7.3 7.3M40.7 40.7l-2.8-2.8M37.9 10.1l2.8-2.8M7.3 40.7l2.8-2.8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <h3>Wartung & Inspektion</h3>
+                <p>Regelmäßige Wartung hält Heizung und Bad zuverlässig und spart Energie.</p>
+            </article>
+            <article class="card reveal" style="--i:5">
+                <div class="card__icon" aria-hidden="true">
+                    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="30" cy="9" r="4" stroke="currentColor" stroke-width="2.5"/>
+                        <path d="M12 15h22" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                        <path d="M22 21l8 8-8 14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 15l4 14L8 43" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6 37l12 0" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <h3>Barrierefreies Bad</h3>
+                <p>Bodengleiche Dusche, Haltegriffe, durchdachte Planung — komfortabel in jedem Alter.</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- Showpiece A: Heizung / Wärmepumpe -->
+<section class="heizung section section--warm" id="heizung">
+    <div class="container">
+        <div class="heizung__inner">
+            <div class="heizung__content reveal">
+                <h2>Alte Heizung raus, <span class="text-warm-strong">Wärmepumpe rein</span>.</h2>
+                <p>Der Umstieg lohnt sich doppelt — niedrigere Kosten und attraktive Förderung. Wir prüfen Ihre Voraussetzungen und übernehmen die Antragstellung auf Wunsch komplett.</p>
+                <a href="#kontakt" class="btn btn--warm btn--lg">Kostenlosen Heizungs-Check anfragen</a>
+            </div>
+            <div class="heizung__stats reveal" style="--i:1">
+                <div class="stat" data-target="70">
+                    <div class="stat__value">
+                        <span class="stat__prefix">bis zu&nbsp;</span><span class="stat__num">0</span><span class="stat__unit">&thinsp;%</span>
+                    </div>
+                    <div class="stat__label">Förderung</div>
+                </div>
+                <div class="stat" data-target="1200" data-locale="true">
+                    <div class="stat__value">
+                        <span class="stat__prefix">bis zu&nbsp;</span><span class="stat__num">0</span><span class="stat__unit">&thinsp;€/Jahr</span>
+                    </div>
+                    <div class="stat__label">Ersparnis</div>
+                </div>
+                <div class="stat" data-target="3">
+                    <div class="stat__value">
+                        <span class="stat__prefix">bis zu&nbsp;</span><span class="stat__num">0</span><span class="stat__unit">&thinsp;t CO₂</span>
+                    </div>
+                    <div class="stat__label">weniger pro Jahr</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Showpiece B: Bad Vorher/Nachher -->
+<section class="bad section" id="bad">
+    <div class="container">
+        <div class="section__header reveal">
+            <h2>Aus alt mach <span class="text-primary">Wohlfühlbad</span>.</h2>
+            <p>Ziehen Sie den Regler — so wird aus einem in die Jahre gekommenen Bad ein modernes, barrierearmes Bad aus einer Hand.</p>
+        </div>
+        <div class="slider-wrap reveal">
+            <div class="before-after" id="before-after" role="img" aria-label="Vorher-Nachher-Vergleich einer Badsanierung">
+                <div class="before-after__img before-after__img--before" aria-hidden="true">
+                    <svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <pattern id="oldTile" x="0" y="0" width="50" height="50" patternUnits="userSpaceOnUse">
+                                <rect width="50" height="50" fill="#C6B896"/>
+                                <rect x="2" y="2" width="46" height="46" fill="#D4C6A4"/>
+                            </pattern>
+                        </defs>
+                        <rect width="800" height="450" fill="url(#oldTile)"/>
+                        <!-- Badewanne alt -->
+                        <rect x="80" y="210" width="380" height="170" rx="10" fill="#E8E0CC" stroke="#B8A880" stroke-width="3"/>
+                        <rect x="92" y="222" width="356" height="140" rx="6" fill="#DDD5BE"/>
+                        <rect x="240" y="200" width="60" height="18" rx="4" fill="#8A8A8A"/>
+                        <circle cx="256" cy="200" r="7" fill="#777"/>
+                        <circle cx="284" cy="200" r="7" fill="#777"/>
+                        <!-- Altes Regal -->
+                        <rect x="510" y="155" width="200" height="12" fill="#A88858" rx="2"/>
+                        <rect x="520" y="100" width="12" height="56" rx="2" fill="#998050"/>
+                        <!-- Alter Spiegel mit Kasten -->
+                        <rect x="510" y="50" width="200" height="140" rx="3" fill="#C0CCCC" stroke="#807060" stroke-width="5"/>
+                        <rect x="520" y="60" width="180" height="120" fill="#CCD8D8" opacity="0.7"/>
+                        <!-- WC -->
+                        <ellipse cx="680" cy="360" rx="58" ry="32" fill="#E4DCC8" stroke="#B0A078" stroke-width="2"/>
+                        <rect x="622" y="292" width="116" height="70" rx="8" fill="#DCCFBA" stroke="#B0A078" stroke-width="2"/>
+                        <!-- Label -->
+                        <rect x="0" y="0" width="800" height="46" fill="rgba(0,0,0,0.5)"/>
+                        <text x="36" y="31" font-family="system-ui,sans-serif" font-size="20" font-weight="600" fill="white">Vorher</text>
+                    </svg>
+                </div>
+                <div class="before-after__img before-after__img--after" aria-hidden="true">
+                    <svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <pattern id="newTile" x="0" y="0" width="100" height="66" patternUnits="userSpaceOnUse">
+                                <rect width="100" height="66" fill="#E4EAEC"/>
+                                <rect x="2" y="2" width="96" height="62" fill="#EEF2F4"/>
+                            </pattern>
+                        </defs>
+                        <rect width="800" height="450" fill="url(#newTile)"/>
+                        <!-- Duschbereich -->
+                        <rect x="60" y="50" width="340" height="370" fill="#E0EAEC" opacity="0.4"/>
+                        <rect x="396" y="50" width="4" height="370" fill="#A8C0C4" opacity="0.9"/>
+                        <!-- Regendusche -->
+                        <rect x="160" y="50" width="140" height="9" rx="4" fill="#B8C4C8"/>
+                        <rect x="226" y="35" width="5" height="18" fill="#B8C4C8"/>
+                        <line x1="175" y1="59" x2="175" y2="74" stroke="#98AAAE" stroke-width="1.5"/>
+                        <line x1="195" y1="59" x2="195" y2="74" stroke="#98AAAE" stroke-width="1.5"/>
+                        <line x1="215" y1="59" x2="215" y2="74" stroke="#98AAAE" stroke-width="1.5"/>
+                        <line x1="235" y1="59" x2="235" y2="74" stroke="#98AAAE" stroke-width="1.5"/>
+                        <line x1="255" y1="59" x2="255" y2="74" stroke="#98AAAE" stroke-width="1.5"/>
+                        <line x1="275" y1="59" x2="275" y2="74" stroke="#98AAAE" stroke-width="1.5"/>
+                        <line x1="295" y1="59" x2="295" y2="74" stroke="#98AAAE" stroke-width="1.5"/>
+                        <!-- Duschwanne -->
+                        <rect x="60" y="398" width="340" height="22" fill="#C8D8DA" rx="2"/>
+                        <!-- Modernes Waschtisch-Möbel -->
+                        <rect x="440" y="250" width="310" height="140" rx="4" fill="#F6F6F6" stroke="#D4D8DA" stroke-width="2"/>
+                        <rect x="452" y="262" width="286" height="106" rx="3" fill="#EEEEEE"/>
+                        <!-- Waschbecken eingebaut -->
+                        <ellipse cx="595" cy="315" rx="90" ry="44" fill="#F0F0F2" stroke="#D0D4D6" stroke-width="2"/>
+                        <ellipse cx="595" cy="315" rx="68" ry="32" fill="#E6E6E8"/>
+                        <!-- Design-Armatur -->
+                        <rect x="588" y="265" width="14" height="10" rx="3" fill="#A8B4B8"/>
+                        <path d="M595 265 Q595 250 612 248" stroke="#A8B4B8" stroke-width="5" fill="none" stroke-linecap="round"/>
+                        <!-- Moderner Spiegel mit LED -->
+                        <rect x="440" y="50" width="310" height="170" fill="#D8E6EA" stroke="#C0CCCE" stroke-width="2"/>
+                        <rect x="450" y="60" width="290" height="150" fill="#E2ECEE" opacity="0.85"/>
+                        <rect x="440" y="46" width="310" height="6" fill="#EE9B3A" opacity="0.7" rx="1"/>
+                        <!-- Heizkörper/Handtuchtrockner -->
+                        <rect x="734" y="180" width="10" height="120" rx="3" fill="#C0C8CC"/>
+                        <rect x="726" y="180" width="7" height="5" rx="1" fill="#B4BCC0"/>
+                        <rect x="726" y="295" width="7" height="5" rx="1" fill="#B4BCC0"/>
+                        <rect x="738" y="200" width="7" height="5" rx="1" fill="#B4BCC0"/>
+                        <rect x="738" y="220" width="7" height="5" rx="1" fill="#B4BCC0"/>
+                        <rect x="738" y="240" width="7" height="5" rx="1" fill="#B4BCC0"/>
+                        <rect x="738" y="260" width="7" height="5" rx="1" fill="#B4BCC0"/>
+                        <!-- Label -->
+                        <rect x="0" y="0" width="800" height="46" fill="rgba(17,168,162,0.75)"/>
+                        <text x="36" y="31" font-family="system-ui,sans-serif" font-size="20" font-weight="600" fill="white">Nachher</text>
+                    </svg>
+                </div>
+                <div class="before-after__handle" id="slider-handle"
+                     role="slider" aria-label="Vorher/Nachher-Regler" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" tabindex="0">
+                    <div class="handle__line"></div>
+                    <div class="handle__btn">
+                        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <circle cx="20" cy="20" r="19" fill="white" stroke="#11A8A2" stroke-width="2"/>
+                            <path d="M15 20l-6-6m6 6l-6 6" stroke="#11A8A2" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M25 20l6-6m-6 6l6 6" stroke="#11A8A2" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bad__cta reveal">
+            <a href="#kontakt" class="btn btn--primary btn--lg">Badberatung vereinbaren</a>
+        </div>
+    </div>
+</section>
+
+<!-- Ablauf -->
+<section class="ablauf section section--surface" id="ablauf">
+    <div class="container">
+        <div class="section__header reveal">
+            <h2>So arbeiten <span class="text-primary">wir</span>.</h2>
+            <p>Vier Schritte von der ersten Anfrage bis zur fertigen Übergabe.</p>
+        </div>
+        <div class="steps">
+            <div class="step reveal" style="--i:0">
+                <div class="step__num" aria-hidden="true">01</div>
+                <h3>Anfrage</h3>
+                <p>Sie melden sich, wir hören zu.</p>
+            </div>
+            <div class="step__conn" aria-hidden="true"></div>
+            <div class="step reveal" style="--i:1">
+                <div class="step__num" aria-hidden="true">02</div>
+                <h3>Beratung & Aufmaß</h3>
+                <p>Wir kommen vorbei und nehmen alles genau auf.</p>
+            </div>
+            <div class="step__conn" aria-hidden="true"></div>
+            <div class="step reveal" style="--i:2">
+                <div class="step__num" aria-hidden="true">03</div>
+                <h3>Festpreis-Angebot</h3>
+                <p>Transparent, schriftlich, ohne versteckte Kosten.</p>
+            </div>
+            <div class="step__conn" aria-hidden="true"></div>
+            <div class="step reveal" style="--i:3">
+                <div class="step__num" aria-hidden="true">04</div>
+                <h3>Umsetzung & Übergabe</h3>
+                <p>Saubere Arbeit, Termin gehalten, alles erklärt.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Über den Betrieb -->
+<section class="ueber section">
+    <div class="container">
+        <div class="ueber__inner">
+            <div class="ueber__portrait reveal" aria-label="Portraitplatzhalter Inhaber Michael Hahn">
+                <svg viewBox="0 0 280 360" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="280" height="360" fill="#E6EEF0" rx="16"/>
+                    <rect x="40" y="200" width="200" height="160" rx="10" fill="#0E8C87"/>
+                    <polygon points="140,205 108,238 140,250 172,238" fill="#F1F6F7"/>
+                    <ellipse cx="140" cy="140" rx="62" ry="70" fill="#C88A60"/>
+                    <ellipse cx="140" cy="78" rx="62" ry="38" fill="#3A2010"/>
+                    <ellipse cx="118" cy="134" rx="8" ry="9" fill="#1A1010"/>
+                    <ellipse cx="162" cy="134" rx="8" ry="9" fill="#1A1010"/>
+                    <circle cx="121" cy="131" r="2.5" fill="white"/>
+                    <circle cx="165" cy="131" r="2.5" fill="white"/>
+                    <path d="M126 158 Q140 168 154 158" stroke="#A06840" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                    <ellipse cx="78" cy="140" rx="10" ry="14" fill="#C88A60"/>
+                    <ellipse cx="202" cy="140" rx="10" ry="14" fill="#C88A60"/>
+                    <rect x="28" y="210" width="44" height="120" rx="22" fill="#0E8C87"/>
+                    <rect x="208" y="210" width="44" height="120" rx="22" fill="#0E8C87"/>
+                    <ellipse cx="50" cy="330" rx="22" ry="18" fill="#C88A60"/>
+                    <ellipse cx="230" cy="330" rx="22" ry="18" fill="#C88A60"/>
+                    <rect x="100" y="258" width="80" height="42" rx="4" fill="white" opacity="0.9"/>
+                    <text x="140" y="275" text-anchor="middle" font-family="system-ui,sans-serif" font-size="8" fill="#11A8A2" font-weight="600">MEISTERBETRIEB</text>
+                    <text x="140" y="291" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#16282C" font-weight="700">M. Hahn</text>
+                </svg>
+            </div>
+            <div class="ueber__text reveal">
+                <h2>Meisterbetrieb mit <span class="text-primary">Leidenschaft</span>.</h2>
+                <p class="ueber__lead">Seit über 25 Jahren steht <strong>Sanitär & Heizung Hahn</strong> in Gevelsberg für saubere Arbeit und ehrliche Beratung.</p>
+                <p>Als Meisterbetrieb planen und montieren wir Bäder und Heizungen aus einer Hand — termintreu, fair und mit Blick auf Ihre Energiekosten.</p>
+                <ul class="ueber__values">
+                    <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Sauberkeit &amp; Termintreue</li>
+                    <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Faire Festpreise, kein Kleingedrucktes</li>
+                    <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Meisterqualität &amp; Gewährleistung</li>
+                    <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Persönliche Beratung vor Ort</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Referenzen -->
+<section class="referenzen section section--surface">
+    <div class="container">
+        <div class="section__header reveal">
+            <h2>Was Kunden <span class="text-primary">sagen</span>.</h2>
+        </div>
+        <div class="testimonials">
+            <blockquote class="testimonial reveal" style="--i:0">
+                <div class="testimonial__stars" aria-label="5 von 5 Sternen">★★★★★</div>
+                <p>„Neues Bad in zwei Wochen — sauber gearbeitet und auf den Tag fertig. Top."</p>
+                <footer>
+                    <strong>Familie K.</strong>, Gevelsberg
+                    <span class="testimonial__badge">Bad-Modernisierung</span>
+                </footer>
+            </blockquote>
+            <blockquote class="testimonial reveal" style="--i:1">
+                <div class="testimonial__stars" aria-label="5 von 5 Sternen">★★★★★</div>
+                <p>„Wärmepumpe inklusive Förderantrag, alles aus einer Hand. Sehr zu empfehlen."</p>
+                <footer>
+                    <strong>Herr M.</strong>, Schwelm
+                    <span class="testimonial__badge">Heizungstausch</span>
+                </footer>
+            </blockquote>
+            <blockquote class="testimonial reveal" style="--i:2">
+                <div class="testimonial__stars" aria-label="5 von 5 Sternen">★★★★★</div>
+                <p>„Nachts Rohrbruch, in einer Stunde war jemand da. Lebensretter."</p>
+                <footer>
+                    <strong>Frau B.</strong>, Ennepetal
+                    <span class="testimonial__badge">Notdienst</span>
+                </footer>
+            </blockquote>
+        </div>
+    </div>
+</section>
+
+<!-- Notdienst-Band -->
+<section class="notdienst-band" aria-label="24-Stunden-Notdienst">
+    <div class="container">
+        <div class="notdienst-band__inner reveal">
+            <div class="notdienst-band__text">
+                <h2>Rohrbruch oder Heizung aus?</h2>
+                <p><strong>24-Stunden-Notdienst</strong> im Ennepe-Ruhr-Kreis.</p>
+            </div>
+            <a href="tel:+4923326543 00" class="notdienst-band__tel" aria-label="Notdienst anrufen">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.8 19.8 0 01.02 1.18C.02.6.48.02 1.08.02h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L5.18 7.59a16 16 0 006.18 6.18l1.95-1.07a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/></svg>
+                02332 / 65 43 00
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq section section--surface">
+    <div class="container">
+        <div class="section__header reveal">
+            <h2>Häufige <span class="text-primary">Fragen</span>.</h2>
+        </div>
+        <div class="accordion reveal">
+            <div class="accordion__item">
+                <button class="accordion__btn" aria-expanded="false">
+                    <span>Wird die Wärmepumpe gefördert?</span>
+                    <svg class="accordion__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <div class="accordion__panel" hidden>
+                    <p>Ja, in der Regel über die BEG-Förderung. Wir prüfen Ihren Anspruch und übernehmen den Antrag auf Wunsch.</p>
+                </div>
+            </div>
+            <div class="accordion__item">
+                <button class="accordion__btn" aria-expanded="false">
+                    <span>Was kostet eine Bad-Sanierung ungefähr?</span>
+                    <svg class="accordion__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <div class="accordion__panel" hidden>
+                    <p>Das hängt von Größe und Ausstattung ab. Nach dem Aufmaß erhalten Sie ein verbindliches Festpreis-Angebot.</p>
+                </div>
+            </div>
+            <div class="accordion__item">
+                <button class="accordion__btn" aria-expanded="false">
+                    <span>Wie lange dauert ein Heizungstausch?</span>
+                    <svg class="accordion__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <div class="accordion__panel" hidden>
+                    <p>Meist 1–3 Tage, je nach System. Den genauen Ablauf besprechen wir vorab.</p>
+                </div>
+            </div>
+            <div class="accordion__item">
+                <button class="accordion__btn" aria-expanded="false">
+                    <span>In welchem Gebiet seid ihr tätig?</span>
+                    <svg class="accordion__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <div class="accordion__panel" hidden>
+                    <p>Gevelsberg und der gesamte Ennepe-Ruhr-Kreis, im Notdienst auch kurzfristig.</p>
+                </div>
+            </div>
+            <div class="accordion__item">
+                <button class="accordion__btn" aria-expanded="false">
+                    <span>Wie läuft die Beratung ab?</span>
+                    <svg class="accordion__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <div class="accordion__panel" hidden>
+                    <p>Kostenlos und unverbindlich: Termin, Aufmaß vor Ort, dann ein klares Angebot.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Kontakt -->
+<section class="kontakt section" id="kontakt">
+    <div class="container">
+        <div class="section__header reveal">
+            <h2>Sprechen Sie <span class="text-primary">uns an</span>.</h2>
+            <p>Schreiben Sie uns — wir melden uns zeitnah zurück.</p>
+        </div>
+        <div class="kontakt__inner">
+            <div class="kontakt__form-wrap reveal">
+                <form class="form" id="contact-form" novalidate>
+                    <p class="form__notice" role="note">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                        Demo-Formular — sendet keine Daten ab.
+                    </p>
+                    <div class="form__row">
+                        <div class="form__field">
+                            <label for="f-name">Name</label>
+                            <input type="text" id="f-name" name="name" placeholder="Ihr Name" autocomplete="name"/>
+                        </div>
+                        <div class="form__field">
+                            <label for="f-tel">Telefon</label>
+                            <input type="tel" id="f-tel" name="telefon" placeholder="Ihre Rufnummer" autocomplete="tel"/>
+                        </div>
+                    </div>
+                    <div class="form__field">
+                        <label for="f-email">E-Mail</label>
+                        <input type="email" id="f-email" name="email" placeholder="ihre@email.de" autocomplete="email"/>
+                    </div>
+                    <div class="form__field">
+                        <label for="f-anliegen">Anliegen</label>
+                        <select id="f-anliegen" name="anliegen">
+                            <option value="">Bitte wählen …</option>
+                            <option value="bad">Badsanierung</option>
+                            <option value="heizung">Heizung / Wärmepumpe</option>
+                            <option value="notdienst">Notdienst</option>
+                            <option value="sonstiges">Sonstiges</option>
+                        </select>
+                    </div>
+                    <div class="form__field">
+                        <label for="f-nachricht">Nachricht</label>
+                        <textarea id="f-nachricht" name="nachricht" rows="5" placeholder="Was können wir für Sie tun?"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--lg btn--full">Nachricht senden</button>
+                    <p class="form__success" id="form-success" hidden>Vielen Dank! (Demo — keine Daten übertragen)</p>
+                </form>
+            </div>
+            <div class="kontakt__info reveal">
+                <div class="kontakt__details">
+                    <div class="kontakt__item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.8 19.8 0 01.02 1.18C.02.6.48.02 1.08.02h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L5.18 7.59a16 16 0 006.18 6.18l1.95-1.07a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/></svg>
+                        <div><span>Telefon</span><a href="tel:+4923326543 21">02332 / 65 43 21</a></div>
+                    </div>
+                    <div class="kontakt__item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+                        <div><span>24h-Notdienst</span><a href="tel:+4923326543 00">02332 / 65 43 00</a></div>
+                    </div>
+                    <div class="kontakt__item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        <div><span>E-Mail</span><a href="mailto:info@sanitaer-hahn.de">info@sanitaer-hahn.de</a></div>
+                    </div>
+                    <div class="kontakt__item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        <div><span>Adresse</span><address>Industriestraße 8<br>58285 Gevelsberg</address></div>
+                    </div>
+                    <div class="kontakt__item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                        <div><span>Öffnungszeiten</span><span>Mo–Fr 7:00–16:30 Uhr</span></div>
+                    </div>
+                </div>
+                <div class="map-placeholder" aria-label="Kartenplatzhalter: Industriestraße 8, 58285 Gevelsberg">
+                    <svg viewBox="0 0 400 240" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="400" height="240" fill="#E6EEF0"/>
+                        <rect x="0" y="104" width="400" height="18" fill="#F1F6F7"/>
+                        <rect x="150" y="0" width="18" height="240" fill="#F1F6F7"/>
+                        <rect x="0" y="158" width="400" height="12" fill="#F1F6F7" opacity="0.7"/>
+                        <rect x="230" y="0" width="12" height="240" fill="#F1F6F7" opacity="0.7"/>
+                        <rect x="24" y="26" width="58" height="66" fill="#C4D4D8" rx="2"/>
+                        <rect x="94" y="36" width="46" height="56" fill="#C4D4D8" rx="2"/>
+                        <rect x="178" y="28" width="38" height="64" fill="#C4D4D8" rx="2"/>
+                        <rect x="252" y="40" width="52" height="52" fill="#C4D4D8" rx="2"/>
+                        <rect x="320" y="26" width="62" height="66" fill="#C4D4D8" rx="2"/>
+                        <rect x="24" y="130" width="38" height="46" fill="#C4D4D8" rx="2"/>
+                        <rect x="74" y="130" width="66" height="46" fill="#C4D4D8" rx="2"/>
+                        <rect x="178" y="134" width="38" height="42" fill="#C4D4D8" rx="2"/>
+                        <rect x="252" y="130" width="56" height="38" fill="#C4D4D8" rx="2"/>
+                        <rect x="322" y="130" width="54" height="42" fill="#C4D4D8" rx="2"/>
+                        <rect x="24" y="186" width="76" height="44" fill="#C4D4D8" rx="2"/>
+                        <rect x="178" y="188" width="42" height="40" fill="#C4D4D8" rx="2"/>
+                        <rect x="252" y="186" width="50" height="44" fill="#C4D4D8" rx="2"/>
+                        <circle cx="159" cy="112" r="20" fill="white" opacity="0.9"/>
+                        <circle cx="159" cy="106" r="12" fill="#11A8A2"/>
+                        <path d="M159 118 L152 106 Q152 94 159 94 Q166 94 166 106 Z" fill="#11A8A2"/>
+                        <circle cx="159" cy="106" r="5" fill="white"/>
+                        <rect x="54" y="218" width="292" height="18" rx="9" fill="white" opacity="0.85"/>
+                        <text x="200" y="231" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#16282C">Industriestraße 8 · 58285 Gevelsberg</text>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer__grid">
+            <div class="footer__brand">
+                <p class="footer__logo">SH Hahn</p>
+                <p class="footer__claim">Bad und Heizung aus Meisterhand.</p>
+                <address>
+                    Industriestraße 8<br>
+                    58285 Gevelsberg<br>
+                    <a href="tel:+4923326543 21">02332 / 65 43 21</a>
+                </address>
+            </div>
+            <div class="footer__col">
+                <h3>Leistungen</h3>
+                <ul>
+                    <li><a href="#leistungen">Bad-Modernisierung</a></li>
+                    <li><a href="#heizung">Heizung & Wärmepumpe</a></li>
+                    <li><a href="#leistungen">Sanitärinstallation</a></li>
+                    <li><a href="#leistungen">Notdienst</a></li>
+                    <li><a href="#leistungen">Wartung & Inspektion</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h3>Kontakt</h3>
+                <ul>
+                    <li><a href="tel:+4923326543 21">02332 / 65 43 21</a></li>
+                    <li><a href="tel:+4923326543 00">Notdienst: 02332 / 65 43 00</a></li>
+                    <li><a href="mailto:info@sanitaer-hahn.de">info@sanitaer-hahn.de</a></li>
+                    <li>Mo–Fr 7:00–16:30 Uhr</li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h3>Rechtliches</h3>
+                <ul>
+                    <li><a href="#">Impressum</a></li>
+                    <li><a href="#">Datenschutz</a></li>
+                    <li><a href="#">AGB</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>© 2024 Sanitär & Heizung Hahn — Fiktiver Musterbetrieb</p>
+            <p>Website von <a href="https://webamboss.de" target="_blank" rel="noopener">Webamboss</a></p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

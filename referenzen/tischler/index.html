@@ -1,0 +1,654 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tischlerei Esche – Möbel nach Maß, Gevelsberg</title>
+  <meta name="description" content="Tischlerei Esche in Gevelsberg – Möbel und Innenausbau nach Maß. Meisterbetrieb in dritter Generation im Ennepe-Ruhr-Kreis." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ① DEMO-BANNER -->
+<div style="position:sticky;top:0;z-index:9999;background:#1E2127;color:#C7CACF;text-align:center;padding:.45rem 1rem;font-size:.8rem;font-weight:500;font-family:system-ui,sans-serif;border-bottom:1px solid #34383F;">
+  Beispielseite von Webamboss · Inhalte und Gestaltung frei anpassbar ·
+  <a href="https://webamboss.de" style="color:#4F9BE0;text-decoration:underline;font-weight:600;" target="_blank" rel="noopener noreferrer">zu webamboss.de</a>
+</div>
+
+<!-- ② STICKY-NAV -->
+<header class="site-nav" id="site-nav">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo" aria-label="Tischlerei Esche – Startseite">Tischlerei <span>Esche</span></a>
+      <nav class="nav-links" aria-label="Hauptnavigation">
+        <a href="#leistungen">Leistungen</a>
+        <a href="#werkstatt">Werkstatt</a>
+        <a href="#referenzen">Referenzen</a>
+        <a href="#kontakt">Kontakt</a>
+        <a href="#kontakt" class="btn-primary">Beratung anfragen</a>
+      </nav>
+      <button class="nav-burger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="nav-mobile" id="burger">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="nav-mobile" id="nav-mobile" aria-label="Mobile Navigation" aria-hidden="true">
+      <a href="#leistungen">Leistungen</a>
+      <a href="#werkstatt">Werkstatt</a>
+      <a href="#referenzen">Referenzen</a>
+      <a href="#kontakt">Kontakt</a>
+      <a href="#kontakt" class="btn-primary">Beratung anfragen</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ③ HERO -->
+<section class="hero" id="hero" aria-labelledby="hero-heading">
+  <!-- Sehr subtile Holzmaserung als Textur-Hintergrund -->
+  <svg class="hero-bg-texture" aria-hidden="true" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+    <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/></filter>
+    <rect width="1200" height="700" filter="url(#grain)" opacity="1" fill="var(--c-cream)"/>
+  </svg>
+
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <p class="hero-label">Tischlerei &middot; Schreinerei &middot; Innenausbau</p>
+        <h1 id="hero-heading">Möbel mit <em>Charakter</em> – Maßarbeit aus Holz.</h1>
+        <p class="hero-sub">Tischlerei in dritter Generation für Gevelsberg und den Ennepe-Ruhr-Kreis. Vom Entwurf bis zur Montage: ehrliches Handwerk, edle Materialien, gemacht für Jahrzehnte.</p>
+        <div class="hero-cta">
+          <a href="#kontakt" class="btn-primary">Beratung anfragen</a>
+          <a href="#leistungen" class="btn-outline-dark">Leistungen ansehen</a>
+        </div>
+        <div class="trust-bar" role="list" aria-label="Vertrauenspunkte">
+          <span class="trust-item" role="listitem">Meisterbetrieb</span>
+          <span class="trust-item" role="listitem">seit 1971</span>
+          <span class="trust-item" role="listitem">Maßanfertigung</span>
+          <span class="trust-item" role="listitem">Ennepe-Ruhr-Kreis</span>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <!-- Maserungs-Signatur-Animation -->
+        <svg class="grain-svg" id="grain-hero" viewBox="0 0 460 520" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+          <rect width="460" height="520" rx="16" fill="#322117"/>
+          <!-- Holzmaserungslinien – werden via stroke-dashoffset eingezeichnet -->
+          <g stroke="#B98A44" stroke-width="1.2" fill="none" opacity="0.55">
+            <path class="grain-line" d="M 20 60 Q 80 55 140 68 Q 200 80 260 72 Q 330 62 420 70"/>
+            <path class="grain-line" d="M 10 95 Q 70 88 130 102 Q 195 116 260 108 Q 340 97 450 106"/>
+            <path class="grain-line" d="M 15 135 Q 85 128 150 144 Q 220 158 290 148 Q 370 135 445 143"/>
+            <path class="grain-line" d="M 20 175 Q 90 167 160 183 Q 235 200 310 188 Q 385 174 448 183"/>
+            <path class="grain-line" d="M 10 218 Q 80 210 150 226 Q 230 244 310 230 Q 390 216 450 225"/>
+            <path class="grain-line" d="M 25 262 Q 95 253 165 270 Q 245 288 325 273 Q 400 258 448 268"/>
+            <path class="grain-line" d="M 15 308 Q 90 298 165 315 Q 248 334 335 317 Q 408 302 450 312"/>
+            <path class="grain-line" d="M 20 354 Q 98 343 175 361 Q 260 380 350 363 Q 420 348 450 357"/>
+            <path class="grain-line" d="M 10 402 Q 92 390 172 408 Q 258 428 350 410 Q 415 397 450 405"/>
+            <path class="grain-line" d="M 20 450 Q 100 437 182 456 Q 270 476 365 456 Q 420 444 450 452"/>
+            <path class="grain-line" d="M 15 497 Q 100 482 185 502 Q 275 522 370 500 Q 420 490 448 498"/>
+          </g>
+          <!-- Jahresringe-Motiv -->
+          <g stroke="rgba(185,138,68,0.18)" stroke-width="1" fill="none">
+            <ellipse class="grain-ring" cx="230" cy="260" rx="60" ry="40"/>
+            <ellipse class="grain-ring" cx="230" cy="260" rx="100" ry="70"/>
+            <ellipse class="grain-ring" cx="230" cy="260" rx="145" ry="105"/>
+            <ellipse class="grain-ring" cx="230" cy="260" rx="190" ry="140"/>
+          </g>
+          <!-- Messing-Akzent-Linie -->
+          <line x1="60" y1="490" x2="400" y2="490" stroke="#B98A44" stroke-width="1.5" opacity="0.6" class="grain-accent"/>
+          <!-- Label -->
+          <text x="230" y="508" text-anchor="middle" fill="#C7B393" font-size="10" font-family="Georgia,serif" letter-spacing="3" opacity="0.7">TISCHLEREI ESCHE · GEVELSBERG</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Span-Akzent Übergang -->
+<div class="span-accent" aria-hidden="true">
+  <svg viewBox="0 0 1200 40" xmlns="http://www.w3.org/2000/svg" width="100%" height="40" preserveAspectRatio="none">
+    <path d="M0 0 Q300 40 600 20 Q900 0 1200 30 L1200 0 Z" fill="var(--c-walnut)"/>
+  </svg>
+</div>
+
+<!-- ④ LEISTUNGEN -->
+<section class="leistungen section-pad" id="leistungen" aria-labelledby="leistungen-heading">
+  <div class="container">
+    <p class="section-label reveal">Was wir machen</p>
+    <h2 class="section-title reveal" id="leistungen-heading">Handwerk für jeden Anspruch.</h2>
+    <p class="section-sub reveal">Vom einzelnen Möbelstück bis zum kompletten Innenausbau – wir planen, fertigen und montieren alles aus einer Hand.</p>
+    <div class="cards-grid">
+
+      <article class="card reveal" aria-label="Leistung: Möbel nach Maß">
+        <div class="card-icon" aria-hidden="true">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="4" y="10" width="32" height="22" rx="3" stroke="#B98A44" stroke-width="1.8"/>
+            <line x1="4" y1="18" x2="36" y2="18" stroke="#B98A44" stroke-width="1.4"/>
+            <line x1="14" y1="32" x2="14" y2="36" stroke="#B98A44" stroke-width="1.8"/>
+            <line x1="26" y1="32" x2="26" y2="36" stroke="#B98A44" stroke-width="1.8"/>
+          </svg>
+        </div>
+        <h3>Möbel nach Maß</h3>
+        <p>Tisch, Sideboard oder Regal – genau für Ihren Raum entworfen und gefertigt.</p>
+      </article>
+
+      <article class="card reveal" aria-label="Leistung: Einbauschränke & Innenausbau">
+        <div class="card-icon" aria-hidden="true">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="5" y="5" width="30" height="30" rx="3" stroke="#B98A44" stroke-width="1.8"/>
+            <line x1="20" y1="5" x2="20" y2="35" stroke="#B98A44" stroke-width="1.4"/>
+            <circle cx="17" cy="20" r="1.5" fill="#B98A44"/>
+            <circle cx="23" cy="20" r="1.5" fill="#B98A44"/>
+          </svg>
+        </div>
+        <h3>Einbauschränke &amp; Innenausbau</h3>
+        <p>Jede Nische genutzt: passgenaue Schränke, Garderoben und Raumteiler.</p>
+      </article>
+
+      <article class="card reveal" aria-label="Leistung: Küchen nach Maß">
+        <div class="card-icon" aria-hidden="true">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="4" y="12" width="32" height="18" rx="3" stroke="#B98A44" stroke-width="1.8"/>
+            <rect x="4" y="28" width="32" height="6" rx="2" stroke="#B98A44" stroke-width="1.4"/>
+            <circle cx="12" cy="8" r="2.5" stroke="#B98A44" stroke-width="1.5"/>
+            <circle cx="20" cy="7" r="2.5" stroke="#B98A44" stroke-width="1.5"/>
+            <circle cx="28" cy="8" r="2.5" stroke="#B98A44" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <h3>Küchen nach Maß</h3>
+        <p>Küchen, die zu Ihrem Leben passen – langlebig und individuell geplant.</p>
+      </article>
+
+      <article class="card reveal" aria-label="Leistung: Türen & Treppen">
+        <div class="card-icon" aria-hidden="true">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="10" y="4" width="18" height="32" rx="3" stroke="#B98A44" stroke-width="1.8"/>
+            <circle cx="24" cy="20" r="1.8" fill="#B98A44"/>
+            <polyline points="6,36 12,28 18,20 24,12 30,4" stroke="#B98A44" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3>Türen &amp; Treppen</h3>
+        <p>Innentüren und Treppen in Massivholz, sauber gearbeitet und montiert.</p>
+      </article>
+
+      <article class="card reveal" aria-label="Leistung: Restaurierung & Aufarbeitung">
+        <div class="card-icon" aria-hidden="true">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 20 8 L 32 20 L 20 32 L 8 20 Z" stroke="#B98A44" stroke-width="1.8" fill="none"/>
+            <path d="M 16 16 Q 20 12 24 16 Q 28 20 24 24 Q 20 28 16 24 Q 12 20 16 16Z" stroke="#B98A44" stroke-width="1.2" fill="none"/>
+            <path d="M 6 34 L 14 26" stroke="#B98A44" stroke-width="2.2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3>Restaurierung &amp; Aufarbeitung</h3>
+        <p>Wir geben alten Möbeln und Erbstücken ihr zweites Leben.</p>
+      </article>
+
+      <article class="card reveal" aria-label="Leistung: Parkett & Dielen">
+        <div class="card-icon" aria-hidden="true">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="4" y="14" width="15" height="7" rx="1" stroke="#B98A44" stroke-width="1.6"/>
+            <rect x="21" y="14" width="15" height="7" rx="1" stroke="#B98A44" stroke-width="1.6"/>
+            <rect x="11" y="23" width="18" height="7" rx="1" stroke="#B98A44" stroke-width="1.6"/>
+            <rect x="4" y="23" width="5" height="7" rx="1" stroke="#B98A44" stroke-width="1.6"/>
+            <rect x="31" y="23" width="5" height="7" rx="1" stroke="#B98A44" stroke-width="1.6"/>
+          </svg>
+        </div>
+        <h3>Parkett &amp; Dielen</h3>
+        <p>Massivholzböden verlegt, geschliffen und geölt – fürs warme Wohngefühl.</p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ⑤ SIGNATUR-SECTION: WERKSTATT (dunkel) -->
+<section class="werkstatt section-pad" id="werkstatt" aria-labelledby="werkstatt-heading">
+  <div class="container">
+    <div class="werkstatt-inner">
+      <div class="werkstatt-text reveal">
+        <p class="section-label on-dark">Unser Handwerk</p>
+        <h2 id="werkstatt-heading">Aus einem <em>Brett</em> wird Ihr Lieblingsstück.</h2>
+        <p>Wir arbeiten, wie man früher gearbeitet hat – mit Maß, Geduld und Respekt vor dem Material. Jedes Stück entsteht in unserer eigenen Werkstatt, von Hand geplant und gebaut.</p>
+      </div>
+      <div class="werkstatt-visual" aria-hidden="true">
+        <svg id="grain-werkstatt" viewBox="0 0 380 440" xmlns="http://www.w3.org/2000/svg" width="380" height="440" aria-hidden="true">
+          <rect width="380" height="440" rx="14" fill="#241813"/>
+          <g stroke="#B98A44" stroke-width="1" fill="none" opacity="0.45">
+            <path class="grain-line-w" d="M 20 50 Q 90 44 160 58 Q 230 70 310 60 Q 350 55 370 60"/>
+            <path class="grain-line-w" d="M 15 90 Q 80 82 155 97 Q 228 112 305 99 Q 345 92 370 98"/>
+            <path class="grain-line-w" d="M 20 133 Q 88 124 162 140 Q 238 156 315 140 Q 350 133 370 138"/>
+            <path class="grain-line-w" d="M 15 178 Q 85 168 162 185 Q 240 202 320 185 Q 352 178 370 182"/>
+            <path class="grain-line-w" d="M 20 224 Q 90 213 165 230 Q 244 248 325 230 Q 355 222 370 228"/>
+            <path class="grain-line-w" d="M 15 272 Q 90 260 168 278 Q 248 296 330 277 Q 356 269 370 274"/>
+            <path class="grain-line-w" d="M 20 320 Q 95 308 172 327 Q 255 346 338 325 Q 358 317 370 322"/>
+            <path class="grain-line-w" d="M 15 370 Q 95 357 175 377 Q 260 397 345 374 Q 360 366 370 372"/>
+            <path class="grain-line-w" d="M 20 415 Q 100 400 180 420 Q 265 440 350 418 Q 362 412 370 417"/>
+          </g>
+          <!-- Hobel-Werkzeug als SVG -->
+          <g transform="translate(80, 160)" stroke="#B98A44" stroke-width="1.8" fill="none" opacity="0.6">
+            <rect x="0" y="20" width="80" height="28" rx="4"/>
+            <rect x="10" y="10" width="60" height="14" rx="3"/>
+            <line x1="20" y1="48" x2="20" y2="56"/>
+            <line x1="60" y1="48" x2="60" y2="56"/>
+            <path d="M 80 32 L 98 26 L 98 40 Z" fill="#B98A44" opacity="0.4"/>
+          </g>
+          <text x="190" y="425" text-anchor="middle" fill="#C7B393" font-size="9" font-family="Georgia,serif" letter-spacing="3" opacity="0.6">HANDWERK SEIT 1971</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Span-Akzent -->
+<div class="span-accent" aria-hidden="true" style="background:var(--c-walnut)">
+  <svg viewBox="0 0 1200 36" xmlns="http://www.w3.org/2000/svg" width="100%" height="36" preserveAspectRatio="none">
+    <path d="M0 36 Q400 0 800 20 Q1000 30 1200 10 L1200 36 Z" fill="var(--c-oak-2)"/>
+  </svg>
+</div>
+
+<!-- ⑥ HOLZARTEN-WÄHLER -->
+<section class="holzarten section-pad" id="holzarten" aria-labelledby="holzarten-heading">
+  <div class="container">
+    <p class="section-label reveal">Das Material</p>
+    <h2 class="section-title reveal" id="holzarten-heading">Welches Holz darf's sein?</h2>
+    <p class="section-sub reveal">Jede Holzart erzählt ihre eigene Geschichte. Wir beraten Sie gern, welche am besten zu Ihrem Projekt passt.</p>
+
+    <div class="holz-tabs reveal" role="tablist" aria-label="Holzarten auswählen">
+      <button class="holz-tab active" role="tab" aria-selected="true" aria-controls="holz-panel" data-holz="eiche" tabindex="0">Eiche</button>
+      <button class="holz-tab" role="tab" aria-selected="false" aria-controls="holz-panel" data-holz="nussbaum" tabindex="-1">Nussbaum</button>
+      <button class="holz-tab" role="tab" aria-selected="false" aria-controls="holz-panel" data-holz="esche" tabindex="-1">Esche</button>
+      <button class="holz-tab" role="tab" aria-selected="false" aria-controls="holz-panel" data-holz="geraeuchert" tabindex="-1">Eiche geräuchert</button>
+    </div>
+
+    <div class="holz-preview reveal" id="holz-panel" role="tabpanel">
+      <div class="holz-swatch">
+        <!-- SVG-Holzmaserung, via JS getauscht -->
+        <svg id="holz-svg" viewBox="0 0 420 280" xmlns="http://www.w3.org/2000/svg" width="100%" aria-hidden="true">
+          <rect id="holz-bg" width="420" height="280" rx="12" fill="#C8A97A"/>
+          <g id="holz-grain" stroke="rgba(120,70,20,0.18)" stroke-width="1.5" fill="none">
+            <path d="M 10 40 Q 80 35 150 48 Q 220 60 300 50 Q 360 42 420 48"/>
+            <path d="M 5 75 Q 80 68 155 82 Q 230 96 310 84 Q 370 74 420 80"/>
+            <path d="M 10 112 Q 85 104 160 118 Q 238 133 318 119 Q 375 109 420 115"/>
+            <path d="M 5 152 Q 82 143 160 158 Q 242 173 325 158 Q 378 147 420 153"/>
+            <path d="M 10 192 Q 88 182 168 197 Q 252 213 335 197 Q 382 186 420 192"/>
+            <path d="M 5 234 Q 90 222 172 238 Q 258 255 345 238 Q 385 228 420 234"/>
+          </g>
+        </svg>
+      </div>
+      <div class="holz-info" id="holz-info">
+        <h3 id="holz-name">Eiche</h3>
+        <p id="holz-desc">Robust und zeitlos, mit ruhiger Maserung. Eiche ist die beliebteste Wahl für Möbel, die Generationen überdauern sollen – warm, charaktervoll und pflegeleicht.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ⑦ VORHER/NACHHER -->
+<section class="vorher-nachher section-pad" id="vorher-nachher" aria-labelledby="vn-heading">
+  <div class="container">
+    <div class="vn-inner">
+      <div class="vn-text reveal">
+        <p class="section-label">Vorher – Nachher</p>
+        <h2 id="vn-heading">Aus alt wird <em>maßgefertigt</em>.</h2>
+        <p>Ziehen Sie den Regler – so wird aus einer ungenutzten Ecke ein Einbau, der wirkt, als wäre er schon immer da gewesen.</p>
+        <a href="#kontakt" class="btn-outline-light">Projekt besprechen</a>
+      </div>
+
+      <div class="reveal">
+        <div class="vn-slider-wrap" id="vn-slider" role="group" aria-label="Vorher-Nachher-Vergleich">
+          <!-- VORHER -->
+          <div class="vn-before" aria-label="Vorher">
+            <svg viewBox="0 0 520 390" xmlns="http://www.w3.org/2000/svg" width="520" height="390" aria-hidden="true">
+              <rect width="520" height="390" fill="#9E8E7A"/>
+              <rect x="20" y="40" width="200" height="310" rx="4" fill="#8A7B6A" opacity="0.6"/>
+              <rect x="240" y="100" width="260" height="10" rx="2" fill="#7A6A59" opacity="0.4"/>
+              <rect x="240" y="130" width="220" height="10" rx="2" fill="#7A6A59" opacity="0.3"/>
+              <rect x="240" y="160" width="240" height="10" rx="2" fill="#7A6A59" opacity="0.3"/>
+              <text x="260" y="240" fill="#6A5C4E" font-size="18" font-family="Georgia,serif" opacity="0.5">Ungenutzte Ecke</text>
+              <text x="50" y="200" fill="#5A4C3E" font-size="14" font-family="Georgia,serif" opacity="0.6">Vorher</text>
+            </svg>
+            <span class="vn-label vn-label-before" aria-hidden="true">Vorher</span>
+          </div>
+          <!-- NACHHER -->
+          <div class="vn-after" id="vn-after" aria-label="Nachher">
+            <svg viewBox="0 0 520 390" xmlns="http://www.w3.org/2000/svg" width="520" height="390" aria-hidden="true">
+              <rect width="520" height="390" fill="#E6D6BD"/>
+              <!-- Einbauschrank nach Maß -->
+              <rect x="20" y="20" width="480" height="350" rx="6" fill="#C8A97A"/>
+              <rect x="20" y="20" width="155" height="350" rx="4" fill="#B8946A"/>
+              <rect x="185" y="20" width="155" height="350" rx="4" fill="#BA9870"/>
+              <rect x="350" y="20" width="150" height="350" rx="4" fill="#B8946A"/>
+              <line x1="20" y1="185" x2="175" y2="185" stroke="#9A7850" stroke-width="1.5"/>
+              <line x1="185" y1="185" x2="340" y2="185" stroke="#9A7850" stroke-width="1.5"/>
+              <line x1="350" y1="185" x2="500" y2="185" stroke="#9A7850" stroke-width="1.5"/>
+              <!-- Griffe -->
+              <rect x="95" y="175" width="3" height="20" rx="1.5" fill="#B98A44"/>
+              <rect x="258" y="175" width="3" height="20" rx="1.5" fill="#B98A44"/>
+              <rect x="422" y="175" width="3" height="20" rx="1.5" fill="#B98A44"/>
+              <text x="260" y="380" text-anchor="middle" fill="#7A5C30" font-size="13" font-family="Georgia,serif" opacity="0.7">Maßanfertigung – Tischlerei Esche</text>
+            </svg>
+            <span class="vn-label vn-label-after" aria-hidden="true">Nachher</span>
+          </div>
+
+          <!-- Handle -->
+          <div class="vn-handle" id="vn-handle" role="slider" aria-label="Vorher-Nachher-Regler" aria-valuemin="5" aria-valuemax="95" aria-valuenow="50" tabindex="0"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ⑧ ABLAUF -->
+<section class="ablauf section-pad" id="ablauf" aria-labelledby="ablauf-heading">
+  <div class="container">
+    <p class="section-label reveal">Wie es läuft</p>
+    <h2 class="section-title reveal" id="ablauf-heading">So entsteht Ihr Stück.</h2>
+    <p class="section-sub reveal">Vom ersten Gespräch bis zur Montage – transparent, verbindlich, ohne Überraschungen.</p>
+    <div class="steps-grid">
+      <div class="step reveal">
+        <h3>Anfrage</h3>
+        <p>Sie erzählen uns von Ihrer Idee.</p>
+      </div>
+      <div class="step reveal">
+        <h3>Beratung &amp; Aufmaß</h3>
+        <p>Wir kommen vorbei und nehmen alles genau auf.</p>
+      </div>
+      <div class="step reveal">
+        <h3>Entwurf &amp; Festpreis</h3>
+        <p>Sie sehen Ihr Stück vorab – transparent und verbindlich.</p>
+      </div>
+      <div class="step reveal">
+        <h3>Fertigung in der Werkstatt</h3>
+        <p>Handwerk aus Meisterhand, Stück für Stück.</p>
+      </div>
+      <div class="step reveal">
+        <h3>Lieferung &amp; Montage</h3>
+        <p>Wir liefern, montieren und räumen sauber auf.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ⑨ ÜBER DIE WERKSTATT (dunkel) -->
+<section class="ueber section-pad" id="ueber" aria-labelledby="ueber-heading">
+  <div class="container">
+    <div class="ueber-inner">
+      <div class="ueber-text reveal">
+        <p class="section-label">Über uns</p>
+        <h2 id="ueber-heading">Die <em>Tischlerei Esche</em> – seit drei Generationen.</h2>
+        <p>Seit 1971 steht die Tischlerei Esche in Gevelsberg für ehrliches Handwerk. Heute in dritter Generation fertigen wir Möbel und Innenausbau nach Maß – mit ausgesuchten Hölzern, sauberer Arbeit und dem Anspruch, dass jedes Stück Jahrzehnte hält.</p>
+        <p>Andreas Esche, Tischlermeister, führt den Betrieb mit seinem Team aus erfahrenen Fachkräften. Die eigene Werkstatt gibt uns die Kontrolle über jedes Detail – vom ersten Schnitt bis zur letzten Schraube.</p>
+        <div class="ueber-badges">
+          <span class="badge">Meisterbetrieb</span>
+          <span class="badge">3. Generation</span>
+          <span class="badge">Eigene Werkstatt</span>
+          <span class="badge">Festpreisangebot</span>
+        </div>
+      </div>
+      <div class="ueber-visual" aria-hidden="true">
+        <svg viewBox="0 0 340 400" xmlns="http://www.w3.org/2000/svg" width="340" height="400" aria-hidden="true">
+          <rect width="340" height="400" rx="16" fill="#322117"/>
+          <!-- Werkstatt-Silhouette -->
+          <rect x="40" y="80" width="260" height="240" rx="4" fill="#241813" stroke="#B98A44" stroke-width="1" opacity="0.6"/>
+          <!-- Hobel-Bank -->
+          <rect x="60" y="200" width="220" height="40" rx="3" fill="#3A2820" stroke="#B98A44" stroke-width="1" opacity="0.8"/>
+          <rect x="70" y="240" width="20" height="60" rx="2" fill="#2A1C12"/>
+          <rect x="250" y="240" width="20" height="60" rx="2" fill="#2A1C12"/>
+          <!-- Werkzeug -->
+          <line x1="100" y1="160" x2="240" y2="160" stroke="#B98A44" stroke-width="1.5" opacity="0.5"/>
+          <rect x="110" y="140" width="50" height="20" rx="3" fill="#3A2820" stroke="#B98A44" stroke-width="1" opacity="0.6"/>
+          <rect x="180" y="140" width="50" height="20" rx="3" fill="#3A2820" stroke="#B98A44" stroke-width="1" opacity="0.6"/>
+          <!-- Figur: Tischler -->
+          <circle cx="170" cy="120" r="18" fill="#3A2820" stroke="#B98A44" stroke-width="1" opacity="0.7"/>
+          <rect x="155" y="138" width="30" height="50" rx="4" fill="#2E1E14" stroke="#B98A44" stroke-width="1" opacity="0.6"/>
+          <!-- Messingdetail -->
+          <line x1="80" y1="360" x2="260" y2="360" stroke="#B98A44" stroke-width="1.5" opacity="0.4"/>
+          <text x="170" y="378" text-anchor="middle" fill="#C7B393" font-size="9" font-family="Georgia,serif" letter-spacing="3" opacity="0.6">WERKSTATTWEG 4 · GEVELSBERG</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Span-Akzent -->
+<div class="span-accent" aria-hidden="true" style="background:var(--c-walnut-2)">
+  <svg viewBox="0 0 1200 36" xmlns="http://www.w3.org/2000/svg" width="100%" height="36" preserveAspectRatio="none">
+    <path d="M0 20 Q300 36 600 18 Q900 0 1200 26 L1200 36 L0 36Z" fill="var(--c-oak)"/>
+  </svg>
+</div>
+
+<!-- ⑩ REFERENZEN -->
+<section class="referenzen section-pad" id="referenzen" aria-labelledby="referenzen-heading">
+  <div class="container">
+    <p class="section-label reveal">Was Kunden sagen</p>
+    <h2 class="section-title reveal" id="referenzen-heading">Stimmen aus dem Ennepe-Ruhr-Kreis.</h2>
+    <p class="section-sub reveal" style="font-size:.8rem;font-style:italic;">(Fiktive Bewertungen – nur Platzhalter)</p>
+    <div class="testimonials-grid">
+      <article class="testimonial reveal" aria-label="Kundenstimme Familie R.">
+        <div class="stars" aria-label="5 von 5 Sternen">★★★★★</div>
+        <blockquote>„Unser Einbauschrank sieht aus wie ein Möbelstück aus dem Magazin. Absolute Maßarbeit."</blockquote>
+        <cite><strong>Familie R.</strong>, Gevelsberg &middot; Innenausbau</cite>
+      </article>
+      <article class="testimonial reveal" aria-label="Kundenstimme Frau T.">
+        <div class="stars" aria-label="5 von 5 Sternen">★★★★★</div>
+        <blockquote>„Den alten Esstisch meiner Oma restauriert – ich habe fast geweint. Wunderschön."</blockquote>
+        <cite><strong>Frau T.</strong>, Schwelm &middot; Restaurierung</cite>
+      </article>
+      <article class="testimonial reveal" aria-label="Kundenstimme Herr L.">
+        <div class="stars" aria-label="5 von 5 Sternen">★★★★★</div>
+        <blockquote>„Küche nach Maß, auf den Millimeter geplant und top montiert. Sehr empfehlenswert."</blockquote>
+        <cite><strong>Herr L.</strong>, Ennepetal &middot; Küche</cite>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ⑪ BERATUNGS-BAND -->
+<section class="beratungsband section-pad-sm" id="beratungsband" aria-labelledby="beratungsband-heading">
+  <div class="container">
+    <div class="beratungsband-inner reveal">
+      <h2 id="beratungsband-heading">Sie haben eine Idee? <em>Wir machen Maßarbeit daraus.</em></h2>
+      <a href="#kontakt" class="btn-primary" style="white-space:nowrap;flex-shrink:0;">Unverbindliche Beratung anfragen</a>
+    </div>
+  </div>
+</section>
+
+<!-- ⑫ FAQ -->
+<section class="faq section-pad" id="faq" aria-labelledby="faq-heading">
+  <div class="container">
+    <p class="section-label reveal">Häufige Fragen</p>
+    <h2 class="section-title reveal" id="faq-heading">Was möchten Sie wissen?</h2>
+    <div class="accordion reveal" role="list">
+
+      <div class="accordion-item" role="listitem">
+        <button class="accordion-btn" aria-expanded="false" aria-controls="faq-1">
+          Was kostet ein Möbelstück nach Maß?
+          <span class="accordion-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="accordion-body" id="faq-1" role="region">
+          <p>Das hängt von Material, Größe und Aufwand ab. Nach Beratung und Aufmaß erhalten Sie ein verbindliches Festpreis-Angebot – ohne versteckte Kosten.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item" role="listitem">
+        <button class="accordion-btn" aria-expanded="false" aria-controls="faq-2">
+          Wie lange dauert die Fertigung?
+          <span class="accordion-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="accordion-body" id="faq-2" role="region">
+          <p>Je nach Projekt meist 3–8 Wochen. Den Zeitrahmen nennen wir verbindlich im Angebot.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item" role="listitem">
+        <button class="accordion-btn" aria-expanded="false" aria-controls="faq-3">
+          Welche Hölzer verarbeitet ihr?
+          <span class="accordion-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="accordion-body" id="faq-3" role="region">
+          <p>Vor allem heimische Massivhölzer wie Eiche, Esche und Nussbaum – auf Wunsch auch geräuchert oder geölt.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item" role="listitem">
+        <button class="accordion-btn" aria-expanded="false" aria-controls="faq-4">
+          Ist die Beratung kostenlos?
+          <span class="accordion-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="accordion-body" id="faq-4" role="region">
+          <p>Ja. Erstgespräch und Aufmaß vor Ort sind unverbindlich und kostenfrei.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item" role="listitem">
+        <button class="accordion-btn" aria-expanded="false" aria-controls="faq-5">
+          In welchem Gebiet seid ihr tätig?
+          <span class="accordion-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="accordion-body" id="faq-5" role="region">
+          <p>Gevelsberg und der gesamte Ennepe-Ruhr-Kreis.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item" role="listitem">
+        <button class="accordion-btn" aria-expanded="false" aria-controls="faq-6">
+          Restauriert ihr auch alte Möbel?
+          <span class="accordion-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="accordion-body" id="faq-6" role="region">
+          <p>Sehr gern. Erbstücke und Lieblingsstücke arbeiten wir fachgerecht auf – mit dem gleichen Sorgfalt wie bei Neuanfertigungen.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ⑬ KONTAKT -->
+<section class="kontakt section-pad" id="kontakt" aria-labelledby="kontakt-heading">
+  <div class="container">
+    <p class="section-label reveal">Kontakt</p>
+    <h2 class="section-title reveal" id="kontakt-heading">Erzählen Sie uns von Ihrem Projekt.</h2>
+    <p class="section-sub reveal">Wir melden uns zeitnah – unverbindlich und kostenfrei.</p>
+    <div class="kontakt-inner">
+
+      <form class="reveal" novalidate aria-label="Kontaktformular" onsubmit="handleFormSubmit(event)">
+        <div class="form-group">
+          <label for="f-name">Ihr Name *</label>
+          <input type="text" id="f-name" name="name" placeholder="Maria Mustermann" required autocomplete="name"/>
+        </div>
+        <div class="form-group">
+          <label for="f-tel">Telefon</label>
+          <input type="tel" id="f-tel" name="tel" placeholder="02332 / 000 000" autocomplete="tel"/>
+        </div>
+        <div class="form-group">
+          <label for="f-email">E-Mail *</label>
+          <input type="email" id="f-email" name="email" placeholder="ihre@email.de" required autocomplete="email"/>
+        </div>
+        <div class="form-group">
+          <label for="f-anliegen">Anliegen</label>
+          <select id="f-anliegen" name="anliegen">
+            <option value="">Bitte wählen …</option>
+            <option>Möbel nach Maß</option>
+            <option>Innenausbau / Einbauschrank</option>
+            <option>Küche nach Maß</option>
+            <option>Restaurierung</option>
+            <option>Sonstiges</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="f-nachricht">Ihre Nachricht *</label>
+          <textarea id="f-nachricht" name="nachricht" placeholder="Beschreiben Sie kurz Ihr Projekt oder Ihren Wunsch …" required></textarea>
+        </div>
+        <button type="submit" class="btn-primary" style="width:100%;text-align:center;padding:.85rem 1.4rem;font-size:.95rem;">Nachricht senden</button>
+        <p class="form-note">* Pflichtfelder. Diese Demo sendet keine echten Daten.</p>
+        <p id="form-msg" role="status" style="display:none;margin-top:1rem;padding:1rem;border-radius:8px;background:var(--c-brass-wash);color:var(--c-ink);font-size:.9rem;"></p>
+      </form>
+
+      <div class="reveal">
+        <div class="contact-info">
+          <h3>So erreichen Sie uns</h3>
+          <div class="contact-row">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--c-brass)" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.1 2.18 2 2 0 012 0h3a2 2 0 012 1.72c.12.96.36 1.9.71 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.35 1.85.6 2.81.71A2 2 0 0122 14.92z"/></svg>
+            <p><strong>Telefon</strong><br/>02332 / 78 90 12</p>
+          </div>
+          <div class="contact-row">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--c-brass)" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <p><strong>E-Mail</strong><br/>info@tischlerei-esche.de</p>
+          </div>
+          <div class="contact-row">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--c-brass)" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <p><strong>Adresse</strong><br/>Werkstattweg 4<br/>58285 Gevelsberg</p>
+          </div>
+          <div class="contact-row">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--c-brass)" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <p><strong>Öffnungszeiten</strong><br/>Mo–Fr 8:00–16:30 Uhr<br/>Termine nach Absprache</p>
+          </div>
+        </div>
+
+        <!-- Karten-Platzhalter: kein externer Dienst -->
+        <div class="map-placeholder">
+          <svg viewBox="0 0 420 220" xmlns="http://www.w3.org/2000/svg" width="100%" aria-label="Karten-Platzhalter: Tischlerei Esche, Werkstattweg 4, Gevelsberg" role="img">
+            <rect width="420" height="220" fill="#E6D6BD"/>
+            <!-- Straßen -->
+            <line x1="0" y1="110" x2="420" y2="110" stroke="#D9C6A8" stroke-width="8"/>
+            <line x1="210" y1="0" x2="210" y2="220" stroke="#D9C6A8" stroke-width="6"/>
+            <line x1="0" y1="60" x2="420" y2="75" stroke="#E0CFB5" stroke-width="4"/>
+            <line x1="0" y1="160" x2="420" y2="148" stroke="#E0CFB5" stroke-width="4"/>
+            <line x1="120" y1="0" x2="115" y2="220" stroke="#E0CFB5" stroke-width="3"/>
+            <line x1="300" y1="0" x2="305" y2="220" stroke="#E0CFB5" stroke-width="3"/>
+            <!-- Marker -->
+            <circle cx="210" cy="110" r="14" fill="var(--c-brass)" opacity="0.9"/>
+            <circle cx="210" cy="110" r="6" fill="var(--c-walnut)"/>
+            <line x1="210" y1="124" x2="210" y2="140" stroke="var(--c-brass)" stroke-width="2"/>
+            <text x="210" y="160" text-anchor="middle" fill="var(--c-ink-soft)" font-size="10" font-family="sans-serif">Werkstattweg 4, 58285 Gevelsberg</text>
+            <text x="210" y="175" text-anchor="middle" fill="var(--c-ink-soft)" font-size="9" font-family="sans-serif" opacity="0.6">(Karten-Platzhalter – kein externer Dienst)</text>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ⑭ FOOTER -->
+<footer class="site-footer" aria-labelledby="footer-label">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <h3 id="footer-label">Tischlerei Esche</h3>
+        <p>Maßarbeit in Holz – handwerklich, langlebig, mit Charakter. Meisterbetrieb in Gevelsberg seit 1971.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Kontakt</h4>
+        <ul>
+          <li><a href="tel:+4923327890​12">02332 / 78 90 12</a></li>
+          <li><a href="mailto:info@tischlerei-esche.de">info@tischlerei-esche.de</a></li>
+          <li>Werkstattweg 4<br/>58285 Gevelsberg</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Leistungen</h4>
+        <ul>
+          <li><a href="#leistungen">Möbel nach Maß</a></li>
+          <li><a href="#leistungen">Einbauschränke</a></li>
+          <li><a href="#leistungen">Küchen</a></li>
+          <li><a href="#leistungen">Restaurierung</a></li>
+          <li><a href="#leistungen">Parkett &amp; Dielen</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Rechtliches</h4>
+        <ul>
+          <li><a href="#">Impressum</a></li>
+          <li><a href="#">Datenschutz</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2024 Tischlerei Esche &middot; Gevelsberg</span>
+      <span>Website von <a href="https://webamboss.de" target="_blank" rel="noopener">Webamboss</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>

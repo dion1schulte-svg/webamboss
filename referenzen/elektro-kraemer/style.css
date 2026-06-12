@@ -1,0 +1,42 @@
+/* style.css – Elektro Krämer
+   Tailwind übernimmt fast alles. Diese Datei ergänzt nur, was
+   Utilities nicht abdecken: Nav-Transition, Accessibility, Motion. */
+
+body {
+  font-family: 'Source Sans 3', 'Segoe UI', sans-serif;
+}
+
+/* Nav-Höhe und Schrumpf-Effekt beim Scrollen */
+#main-nav {
+  height: 68px;
+  transition: height 0.3s ease;
+}
+#site-header {
+  transition: box-shadow 0.3s ease;
+}
+#site-header.header-scrolled #main-nav {
+  height: 54px;
+}
+#site-header.header-scrolled {
+  box-shadow: 0 2px 24px rgba(0, 0, 0, 0.10);
+}
+
+/* Sichtbarer Fokus-Ring für Tastaturnavigation */
+:focus-visible {
+  outline: 3px solid #f97316;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Kein horizontales Scrollen */
+html, body {
+  overflow-x: hidden;
+}
+
+/* Animationen bei prefers-reduced-motion deaktivieren */
+ @media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

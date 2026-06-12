@@ -91,4 +91,34 @@
     });
   }
 
+  /* ---- Weitere Beispiele Toggle ---- */
+  var moreToggle = document.querySelector('.ref-more-toggle');
+  var moreWrap   = document.getElementById('more-examples');
+
+  if (moreToggle && moreWrap) {
+    moreToggle.addEventListener('click', function () {
+      var open = this.getAttribute('aria-expanded') === 'true';
+      this.setAttribute('aria-expanded', String(!open));
+      moreWrap.classList.toggle('is-open', !open);
+      moreWrap.setAttribute('aria-hidden', String(open));
+      this.querySelector('.ref-more-label').textContent =
+        open ? 'Weitere Beispiele ansehen' : 'Weniger anzeigen';
+    });
+  }
+
+  /* ---- Ref-Card Seitenübergang ---- */
+  document.querySelectorAll('.ref-card[href]').forEach(function (card) {
+    card.addEventListener('click', function (e) {
+      var href = this.getAttribute('href');
+      if (!href || href.charAt(0) === '#' || e.ctrlKey || e.metaKey || e.shiftKey) return;
+      e.preventDefault();
+      if (prefersReduced) {
+        window.location.href = href;
+        return;
+      }
+      document.body.classList.add('is-page-exiting');
+      setTimeout(function () { window.location.href = href; }, 340);
+    });
+  });
+
 })();
