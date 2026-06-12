@@ -106,6 +106,13 @@
     });
   }
 
+  /* ---- bfcache-Fix: Animation-Zustand beim Zurück-Navigieren bereinigen ---- */
+  window.addEventListener('pageshow', function (e) {
+    if (e.persisted) {
+      document.body.classList.remove('is-page-exiting');
+    }
+  });
+
   /* ---- Ref-Card Seitenübergang ---- */
   document.querySelectorAll('.ref-card[href]').forEach(function (card) {
     card.addEventListener('click', function (e) {
