@@ -136,7 +136,12 @@
             <div class="card">
               <h2 style="font-size: var(--text-h3); margin-bottom: var(--space-lg);">Rückruf anfordern</h2>
 
-              <form class="contact-form" action="#" method="post" novalidate>
+              <form id="contact-form" class="contact-form" action="https://formspree.io/f/mvznwyyb" method="POST" novalidate>
+
+                <!-- Formspree-Metafelder -->
+                <input type="hidden" name="_subject" value="Neue Anfrage über webamboss.de">
+                <input type="text"   name="_gotcha"  style="display:none !important" tabindex="-1" autocomplete="off" aria-hidden="true">
+
                 <div style="display: grid; gap: var(--space-md);">
 
                   <div class="form-group">
@@ -145,7 +150,7 @@
                       class="form-input"
                       type="text"
                       id="name"
-                      name="name"
+                      name="Name"
                       placeholder="Max Mustermann"
                       required
                       autocomplete="name">
@@ -157,7 +162,7 @@
                       class="form-input"
                       type="tel"
                       id="telefon"
-                      name="telefon"
+                      name="Telefon"
                       placeholder="0 23 33 / 12 34 56"
                       required
                       autocomplete="tel">
@@ -169,7 +174,7 @@
                       class="form-input"
                       type="email"
                       id="email"
-                      name="email"
+                      name="_replyto"
                       placeholder="max@musterbetrieb.de"
                       autocomplete="email">
                   </div>
@@ -179,7 +184,7 @@
                     <textarea
                       class="form-textarea"
                       id="nachricht"
-                      name="nachricht"
+                      name="Nachricht"
                       placeholder="Kurz beschreiben, was Sie machen – damit ich vorbereitet bin."></textarea>
                   </div>
 
@@ -187,7 +192,7 @@
                     <input
                       type="checkbox"
                       id="datenschutz"
-                      name="datenschutz"
+                      name="Datenschutz"
                       required>
                     <label for="datenschutz">
                       Ich habe die <a href="datenschutz.html">Datenschutzerklärung</a> gelesen und bin damit einverstanden,
@@ -207,6 +212,17 @@
 
                 </div>
               </form>
+
+              <!-- Erfolgs-/Fehlermeldung (via JS eingeblendet) -->
+              <div id="form-success" hidden style="margin-top: var(--space-md); padding: var(--space-lg); background: rgba(74,222,128,0.07); border: 1px solid rgba(74,222,128,0.28); border-radius: var(--radius-lg); text-align: center;">
+                <strong style="color: #4ade80; display: block; margin-bottom: 0.4rem;">Vielen Dank für Ihre Nachricht!</strong>
+                <p style="color: var(--text-muted); font-size: var(--text-sm); margin: 0;">Ich melde mich innerhalb von 24 Stunden bei Ihnen.</p>
+              </div>
+              <div id="form-error" hidden style="margin-top: var(--space-md); padding: var(--space-md) var(--space-lg); background: rgba(248,113,113,0.07); border: 1px solid rgba(248,113,113,0.28); border-radius: var(--radius-md);">
+                <strong style="color: #f87171; display: block; margin-bottom: 0.3rem;">Etwas ist schiefgelaufen.</strong>
+                <p style="color: var(--text-muted); font-size: var(--text-sm); margin: 0;">Bitte schreiben Sie mir direkt an <a href="mailto:info@webamboss.de" style="color: var(--accent);">info@webamboss.de</a> oder versuchen Sie es später erneut.</p>
+              </div>
+
             </div>
 
           </div>

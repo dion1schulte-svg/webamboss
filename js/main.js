@@ -74,20 +74,47 @@
     });
   }
 
-  /* ---- Kontaktformular (einfache Validierung) ---- */
-  const form = document.querySelector('.contact-form');
-  if (form) {
-    form.addEventListener('submit', function (e) {
+  /* ---- Kontaktformular (Formspree AJAX) ---- */
+  var contactForm = document.getElementById('contact-form');
+  if (contactForm) {
+    contactForm.addEventListener('submit', function (e) {
       e.preventDefault();
-      const consent = form.querySelector('[name="datenschutz"]');
+
+      var consent = this.querySelector('[name="Datenschutz"]');
       if (!consent || !consent.checked) {
         alert('Bitte bestätigen Sie die Datenschutzerklärung.');
         return;
       }
-      /* TODO: Hier echten Submit (fetch / Formspree / eigene API) einbauen */
-      const btn = form.querySelector('[type="submit"]');
-      btn.textContent = 'Nachricht gesendet ✓';
-      btn.disabled = true;
+
+      var btn       = this.querySelector('[type="submit"]');
+      var origLabel = btn.textContent;
+      btn.disabled    = true;
+      btn.textContent = 'Wird gesendet…';
+
+      var thisForm = this;
+      fetch(this.action, {
+        method:  'POST',
+        body:    new FormData(this),
+        headers: { 'Accept': 'application/json' }
+      })
+      .then(function (res) {
+        if (res.ok) {
+          thisForm.style.display = 'none';
+          var success = document.getElementById('form-success');
+          if (success) {
+            success.removeAttribute('hidden');
+            success.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+          }
+        } else {
+          throw new Error('server error');
+        }
+      })
+      .catch(function () {
+        var error = document.getElementById('form-error');
+        if (error) { error.removeAttribute('hidden'); }
+        btn.disabled    = false;
+        btn.textContent = origLabel;
+      });
     });
   }
 

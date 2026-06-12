@@ -656,7 +656,7 @@
           <h3 class="font-heading text-2xl font-semibold text-blue-900 mb-2">Nachricht senden</h3>
           <p class="text-blue-500 text-sm mb-6">Wir melden uns innerhalb von 24 Stunden bei Ihnen.</p>
 
-          <form class="space-y-5" novalidate>
+          <form class="space-y-5" novalidate onsubmit="event.preventDefault(); return false;">
 
             <div>
               <label for="name" class="block text-sm font-semibold text-blue-900 mb-1.5">
